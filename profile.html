@@ -13,7 +13,10 @@
         <main class="main">
             <section class="profile">
                 <article class="name">
-                    <img src="./assets/images/user.svg" />
+                    <img
+                        src="./assets/images/user.svg"
+                        class="profile-picture"
+                    />
                     <h2>Fabian Juppe</h2>
                 </article>
                 <article class="about-me">
@@ -37,9 +40,44 @@
                     </div>
                 </article>
                 <article class="settings">
-                    <h3>Settings</h3>
-                    <p>Dark Mode</p>
-                    <input type="checkbox" />
+                    <h3>Style</h3>
+                    <div>
+                        <input
+                            type="radio"
+                            id="gryffindor"
+                            name="style"
+                            value="gryffindor"
+                            checked
+                        />
+                        <label for="gryffindor">Gryffindor</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            id="hufflepuff"
+                            name="style"
+                            value="hufflepuff"
+                        />
+                        <label for="hufflepuff">Hufflepuff</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            id="ravenclaw"
+                            name="style"
+                            value="ravenclaw"
+                        />
+                        <label for="ravenclaw">Ravenclaw</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            id="slytherin"
+                            name="style"
+                            value="slytherin"
+                        />
+                        <label for="slytherin">Slytherin</label>
+                    </div>
                 </article>
             </section>
         </main>
