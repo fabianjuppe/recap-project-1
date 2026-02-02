@@ -13,6 +13,45 @@
     text-align: center;
     background-color: aqua;
     padding: 1rem;
+    z-index: 1;
+}
+
+.main {
+    margin: 6rem 0 5rem;
+}
+
+.questions {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.question-card {
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: aqua;
+    width: 50%;
+    padding: 1rem 1rem 3rem;
+}
+
+.bookmark {
+    position: absolute;
+    right: 0.4rem;
+    top: -0.8rem;
+}
+
+.categories {
+    position: absolute;
+    left: 0.2rem;
+    bottom: 0.2rem;
 }
 
 .footer {
@@ -20,6 +59,7 @@
     width: 100%;
     bottom: 0;
     background-color: aqua;
+    z-index: 1;
 }
 
 .navbar {
