@@ -1,0 +1,82 @@
+:root {
+    /* Gryffindor */
+    --color1: #740001;
+    --color2: #ae0001;
+    --color3: #eeba30;
+    --color4: #d3a625;
+    --color5: #000000;
+
+    /* Hufflepuff */
+    /* --color1: #ecb939;
+    --color2: #f0c75e;
+    --color3: #726255;
+    --color4: #372e29;
+    --color5: #000000; */
+
+    /* Ravenclaw */
+    /* --color1: #0e1a40;
+    --color2: #222f5b;
+    --color3: #5d5d5d;
+    --color4: #946b2d;
+    --color5: #000000; */
+
+    /* Slytherin */
+    /* --color1: #1a472a;
+    --color2: #2a623d;
+    --color3: #5d5d5d;
+    --color4: #aaaaaa;
+    --color5: #000000; */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    background-color: var(--color5);
+    color: var(--color3);
+    padding: 1rem;
+    z-index: 1;
+}
+
+.main {
+    margin: 6rem 0 5rem;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--color1);
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar-link {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-link:hover {
+    color: var(--inky-black);
+    background-color: var(--color2);
+}
+
+.--active {
+    background-color: var(--color3);
+}
