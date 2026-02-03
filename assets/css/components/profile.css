@@ -9,12 +9,14 @@
     color: var(--color4);
     border-radius: 1rem;
     align-content: flex-start;
+    outline: solid 0.1rem var(--color3);
+    box-shadow: 0.1rem 0.1rem 2rem var(--color3);
 }
 
 .profile-picture {
     width: 5rem;
-    border: 1px solid var(--color5);
     border-radius: 5rem;
+    outline: solid 0.1rem var(--color3);
 }
 
 .name {
@@ -44,6 +46,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
+    outline: solid 0.1rem var(--color3);
 }
 
 .settings {
@@ -52,4 +55,5 @@
     flex-wrap: wrap;
     gap: 1rem;
     padding: 0 2rem 2rem;
+    accent-color: var(--color3);
 }
