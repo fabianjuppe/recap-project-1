@@ -46,6 +46,7 @@
     color: var(--color3);
     padding: 1rem;
     z-index: 1;
+    outline: solid 0.1rem var(--color3);
 }
 
 .main {
@@ -70,6 +71,7 @@
     padding: 1rem;
     width: 100%;
     text-align: center;
+    outline: solid 0.1rem var(--color3);
 }
 
 .navbar-link:hover {
@@ -79,4 +81,5 @@
 
 .--active {
     background-color: var(--color3);
+    pointer-events: none;
 }
