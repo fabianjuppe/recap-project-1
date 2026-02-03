@@ -20,6 +20,8 @@
     border-radius: 1rem;
     max-width: 400px;
     padding: 1rem 1rem 3rem;
+    outline: solid 0.1rem var(--color3);
+    box-shadow: 0.1rem 0.1rem 2rem var(--color3);
 }
 
 .bookmark {
@@ -36,6 +38,7 @@
     font-weight: bold;
     background-color: #fff;
     padding: 0 0.3rem;
+    outline: solid 0.1rem var(--color3);
 }
 
 .answer:hover {
@@ -55,6 +58,7 @@
     background-color: var(--color5);
     color: #fff;
     padding: 0 0.3rem;
+    outline: solid 0.1rem var(--color3);
 }
 
 .category:hover {
