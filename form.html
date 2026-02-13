@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Harry Potter Quiz</title>
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script src="./js/index.js" defer></script>
+        <script src="./js/form.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Harry Potter Quiz</h1>
+        </header>
+        <main class="main">
+            <section class="questions">
+                <form class="form" data-js="form">
+                    <label for="question">Your question: </label>
+                    <textarea
+                        data-js="question-input"
+                        name="question"
+                        id="question"
+                        rows="5"
+                        cols="40"
+                        maxlength="150"
+                    ></textarea>
+                    <p
+                        class="remaining"
+                        data-js="question-remaining-characters"
+                    >
+                        150 characters left
+                    </p>
+
+                    <label for="answer">Your answer: </label>
+                    <textarea
+                        data-js="answer-input"
+                        name="answer"
+                        id="answer"
+                        rows="5"
+                        cols="40"
+                        maxlength="150"
+                    ></textarea>
+                    <p class="remaining" data-js="answer-remaining-characters">
+                        150 characters left
+                    </p>
+
+                    <label for="tag">Tag: </label>
+                    <input type="tag" name="tag" id="tag" />
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <section class="questions" data-js="questions"></section>
+            </section>
+        </main>
+        <footer class="footer">
+            <nav class="navbar">
+                <a class="navbar-link" href="index.html">
+                    <img src="./assets/images/house.svg" alt="Home" />
+                </a>
+                <a class="navbar-link" href="bookmarks.html"
+                    ><img src="./assets/images/bookmark.svg" alt="Bookmarks"
+                /></a>
+                <a class="navbar-link --active" href="form.html"
+                    ><img src="./assets/images/circle-plus.svg" alt="Form"
+                /></a>
+                <a class="navbar-link" href="profile.html"
+                    ><img src="./assets/images/user.svg" alt="Profile"
+                /></a>
+            </nav>
+        </footer>
+    </body>
+</html>

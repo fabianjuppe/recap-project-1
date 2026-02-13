@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Harry Potter Quiz</title>
-        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script src="./js/index.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -17,16 +18,24 @@
                         What is the name of the school that Harry Potter
                         attends?
                     </h2>
-                    <button class="bookmark">
-                        <img src="./assets/images/bookmark-check.svg" />
+                    <button class="bookmark" data-js="bookmark">
+                        <img
+                            src="./assets/images/bookmark-check.svg"
+                            class="bookmark-icon checked"
+                            data-js="bookmark-icon"
+                        />
                     </button>
-                    <p>Hogwarts School of Witchcraft and Wizardry</p>
-                    <button class="answer">Show Answer</button>
-                    <div class="categories">
-                        <button class="category">Harry Potter</button>
-                        <button class="category">Hogwarts</button>
-                        <button class="category">Fiction</button>
-                    </div>
+                    <p data-js="answer" hidden>
+                        Hogwarts School of Witchcraft and Wizardry
+                    </p>
+                    <button class="answer" data-js="show-answer">
+                        Show Answer
+                    </button>
+                    <ul class="categories">
+                        <li class="category">Harry Potter</li>
+                        <li class="category">Hogwarts</li>
+                        <li class="category">Fiction</li>
+                    </ul>
                 </article>
                 <article class="question-card">
                     <h2>
@@ -35,13 +44,13 @@
                     <button class="bookmark">
                         <img src="./assets/images/bookmark-check.svg" />
                     </button>
-                    <p>Ron Weasley</p>
+                    <p hidden>Ron Weasley</p>
                     <button class="answer">Show Answer</button>
-                    <div class="categories">
-                        <button class="category">Harry Potter</button>
-                        <button class="category">Characters</button>
-                        <button class="category">Friends</button>
-                    </div>
+                    <ul class="categories">
+                        <li class="category">Harry Potter</li>
+                        <li class="category">Characters</li>
+                        <li class="category">Friends</li>
+                    </ul>
                 </article>
                 <article class="question-card">
                     <h2>
@@ -51,13 +60,13 @@
                     <button class="bookmark">
                         <img src="./assets/images/bookmark-check.svg" />
                     </button>
-                    <p>The Dark Mark</p>
+                    <p hidden>The Dark Mark</p>
                     <button class="answer">Show Answer</button>
-                    <div class="categories">
-                        <button class="category">Harry Potter</button>
-                        <button class="category">Symbolism</button>
-                        <button class="category">Scar</button>
-                    </div>
+                    <ul class="categories">
+                        <li class="category">Harry Potter</li>
+                        <li class="category">Symbolism</li>
+                        <li class="category">Scar</li>
+                    </ul>
                 </article>
                 <article class="question-card">
                     <h2>
@@ -67,13 +76,13 @@
                     <button class="bookmark">
                         <img src="./assets/images/bookmark-check.svg" />
                     </button>
-                    <p>The Fat Lady (portrait)</p>
+                    <p hidden>The Fat Lady (portrait)</p>
                     <button class="answer">Show Answer</button>
-                    <div class="categories">
-                        <button class="category">Harry Potter</button>
-                        <button class="category">Creatures</button>
-                        <button class="category">Gryffindor</button>
-                    </div>
+                    <ul class="categories">
+                        <li class="category">Harry Potter</li>
+                        <li class="category">Creatures</li>
+                        <li class="category">Gryffindor</li>
+                    </ul>
                 </article>
                 <article class="question-card">
                     <h2>
@@ -83,13 +92,13 @@
                     <button class="bookmark">
                         <img src="./assets/images/bookmark-check.svg" />
                     </button>
-                    <p>Quidditch</p>
+                    <p hidden>Quidditch</p>
                     <button class="answer">Show Answer</button>
-                    <div class="categories">
-                        <button class="category">Harry Potter</button>
-                        <button class="category">Sports</button>
-                        <button class="category">Magic</button>
-                    </div>
+                    <ul class="categories">
+                        <li class="category">Harry Potter</li>
+                        <li class="category">Sports</li>
+                        <li class="category">Magic</li>
+                    </ul>
                 </article>
                 <article class="question-card">
                     <h2>
@@ -99,13 +108,13 @@
                     <button class="bookmark">
                         <img src="./assets/images/bookmark-check.svg" />
                     </button>
-                    <p>Fluffy</p>
+                    <p hidden>Fluffy</p>
                     <button class="answer">Show Answer</button>
-                    <div class="categories">
-                        <button class="category">Harry Potter</button>
-                        <button class="category">Creatures</button>
-                        <button class="category">Sorcerer's Stone</button>
-                    </div>
+                    <ul class="categories">
+                        <li class="category">Harry Potter</li>
+                        <li class="category">Creatures</li>
+                        <li class="category">Sorcerer's Stone</li>
+                    </ul>
                 </article>
                 <article class="question-card">
                     <h2>
@@ -115,13 +124,13 @@
                     <button class="bookmark">
                         <img src="./assets/images/bookmark-check.svg" />
                     </button>
-                    <p>Severus Snape</p>
+                    <p hidden>Severus Snape</p>
                     <button class="answer">Show Answer</button>
-                    <div class="categories">
-                        <button class="category">Harry Potter</button>
-                        <button class="category">Characters</button>
-                        <button class="category">Hogwarts</button>
-                    </div>
+                    <ul class="categories">
+                        <li class="category">Harry Potter</li>
+                        <li class="category">Characters</li>
+                        <li class="category">Hogwarts</li>
+                    </ul>
                 </article>
                 <article class="question-card">
                     <h2>
@@ -131,26 +140,26 @@
                     <button class="bookmark">
                         <img src="./assets/images/bookmark-check.svg" />
                     </button>
-                    <p>Lord Voldemort (Tom Riddle)</p>
+                    <p hidden>Lord Voldemort (Tom Riddle)</p>
                     <button class="answer">Show Answer</button>
-                    <div class="categories">
-                        <button class="category">Harry Potter</button>
-                        <button class="category">Villains</button>
-                        <button class="category">Characters</button>
-                    </div>
+                    <ul class="categories">
+                        <li class="category">Harry Potter</li>
+                        <li class="category">Villains</li>
+                        <li class="category">Characters</li>
+                    </ul>
                 </article>
                 <article class="question-card">
                     <h2>What type of creature is Dobby?</h2>
                     <button class="bookmark">
                         <img src="./assets/images/bookmark-check.svg" />
                     </button>
-                    <p>House Elf</p>
+                    <p hidden>House Elf</p>
                     <button class="answer">Show Answer</button>
-                    <div class="categories">
-                        <button class="category">Harry Potter</button>
-                        <button class="category">Creatures</button>
-                        <button class="category">Dobby</button>
-                    </div>
+                    <ul class="categories">
+                        <li class="category">Harry Potter</li>
+                        <li class="category">Creatures</li>
+                        <li class="category">Dobby</li>
+                    </ul>
                 </article>
                 <article class="question-card">
                     <h2>
@@ -161,13 +170,13 @@
                     <button class="bookmark">
                         <img src="./assets/images/bookmark-check.svg" />
                     </button>
-                    <p>The Marauder's Map</p>
+                    <p hidden>The Marauder's Map</p>
                     <button class="answer">Show Answer</button>
-                    <div class="categories">
-                        <button class="category">Harry Potter</button>
-                        <button class="category">Magical Objects</button>
-                        <button class="category">Hogwarts</button>
-                    </div>
+                    <ul class="categories">
+                        <li class="category">Harry Potter</li>
+                        <li class="category">Magical Objects</li>
+                        <li class="category">Hogwarts</li>
+                    </ul>
                 </article>
             </section>
         </main>
@@ -178,6 +187,9 @@
                 </a>
                 <a class="navbar-link --active" href="bookmarks.html"
                     ><img src="./assets/images/bookmark.svg" alt="Bookmarks"
+                /></a>
+                <a class="navbar-link" href="form.html"
+                    ><img src="./assets/images/circle-plus.svg" alt="Form"
                 /></a>
                 <a class="navbar-link" href="profile.html"
                     ><img src="./assets/images/user.svg" alt="Profile"
