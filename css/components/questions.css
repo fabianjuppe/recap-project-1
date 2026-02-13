@@ -7,7 +7,8 @@
     gap: 1.4rem;
 }
 
-.question-card, .form {
+.question-card,
+.form {
     display: flex;
     position: relative;
     text-align: center;
@@ -71,8 +72,4 @@
     padding: 0 0.3rem;
     outline: solid 0.1rem var(--color3);
     font-size: small;
-}
-
-.category:hover {
-    background-color: var(--color2);
 }
