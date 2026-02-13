@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Harry Potter Quiz</title>
-        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script src="./js/profile.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -43,6 +44,7 @@
                     <h3>Style</h3>
                     <div>
                         <input
+                            data-js="style"
                             type="radio"
                             id="gryffindor"
                             name="style"
@@ -53,6 +55,7 @@
                     </div>
                     <div>
                         <input
+                            data-js="style"
                             type="radio"
                             id="hufflepuff"
                             name="style"
@@ -62,6 +65,7 @@
                     </div>
                     <div>
                         <input
+                            data-js="style"
                             type="radio"
                             id="ravenclaw"
                             name="style"
@@ -71,6 +75,7 @@
                     </div>
                     <div>
                         <input
+                            data-js="style"
                             type="radio"
                             id="slytherin"
                             name="style"
@@ -88,6 +93,9 @@
                 </a>
                 <a class="navbar-link" href="bookmarks.html"
                     ><img src="./assets/images/bookmark.svg" alt="Bookmarks"
+                /></a>
+                <a class="navbar-link" href="form.html"
+                    ><img src="./assets/images/circle-plus.svg" alt="Form"
                 /></a>
                 <a class="navbar-link --active" href="profile.html"
                     ><img src="./assets/images/user.svg" alt="Profile"
