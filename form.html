@@ -23,6 +23,7 @@
                         rows="5"
                         cols="40"
                         maxlength="150"
+                        required
                     ></textarea>
                     <p
                         class="remaining"
@@ -39,15 +40,16 @@
                         rows="5"
                         cols="40"
                         maxlength="150"
+                        required
                     ></textarea>
                     <p class="remaining" data-js="answer-remaining-characters">
                         150 characters left
                     </p>
 
                     <label for="tag">Tag: </label>
-                    <input type="tag" name="tag" id="tag" />
+                    <input type="tag" name="tag" id="tag" required />
 
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="submit">Submit</button>
                 </form>
 
                 <section class="questions" data-js="questions"></section>

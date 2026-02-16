@@ -39,7 +39,8 @@
     content: url("../../assets/images/bookmark-minus.svg");
 } */
 
-.answer {
+.answer,
+.submit {
     border-radius: 1rem;
     border-color: #fff;
     border-style: hidden;
@@ -50,7 +51,8 @@
     outline: solid 0.1rem var(--color3);
 }
 
-.answer:hover {
+.answer:hover,
+.submit:hover {
     background-color: var(--color2);
     border-color: var(--color2);
 }

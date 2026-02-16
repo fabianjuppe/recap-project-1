@@ -29,13 +29,11 @@ form.addEventListener("submit", (event) => {
     const bookmarkButton = document.createElement("button");
     bookmarkButton.type = "button";
     bookmarkButton.classList.add("bookmark");
-    bookmarkButton.setAttribute("data-js", "bookmark");
     article.append(bookmarkButton);
 
     const img = document.createElement("img");
     img.setAttribute("src", "./assets/images/bookmark.svg");
     img.classList.add("bookmark-icon");
-    img.setAttribute("data-js", "bookmark-icon");
     bookmarkButton.append(img);
 
     bookmarkButton.addEventListener("click", () => {
@@ -65,14 +63,12 @@ form.addEventListener("submit", (event) => {
     });
 
     const p = document.createElement("p");
-    p.setAttribute("data-js", "answer");
     p.setAttribute("hidden", "");
     p.textContent = data.answer;
     article.append(p);
 
     const answerButton = document.createElement("button");
     answerButton.classList.add("answer");
-    answerButton.setAttribute("data-js", "show-answer");
     answerButton.textContent = "Show Answer";
     article.append(answerButton);
 
@@ -94,6 +90,9 @@ form.addEventListener("submit", (event) => {
     categoryButton.classList.add("category");
     categoryButton.textContent = data.tag;
     div.append(categoryButton);
+
+    event.target.reset();
+    event.target.elements.question.focus();
 });
 
 questionInput.addEventListener("input", (event) => {
