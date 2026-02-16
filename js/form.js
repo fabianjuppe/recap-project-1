@@ -93,6 +93,8 @@ form.addEventListener("submit", (event) => {
 
     event.target.reset();
     event.target.elements.question.focus();
+    questionRemainingCharacters.textContent = `${questionInput.maxLength} characters left`;
+    answerRemainingCharacters.textContent = `${answerInput.maxLength} characters left`;
 });
 
 questionInput.addEventListener("input", (event) => {
